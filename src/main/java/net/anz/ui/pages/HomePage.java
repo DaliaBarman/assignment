@@ -2,39 +2,112 @@ package net.anz.ui.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import net.anz.ui.testbase.TestBase;
+import net.anz.ui.utility.Utility;
 
 public class HomePage extends TestBase{
 	
 	@FindBy(xpath="//input[@id='application_type_single']")
-	WebElement appType;
+	public WebElement appType;
 	
 	@FindBy(xpath="//select[@title='Number of dependants']")
-	WebElement dependentNum;
+	public WebElement dependentNum;
 	
 	@FindBy(xpath="//input[@value='H']")
-	WebElement propertyType;
+	public WebElement propertyType;
 	
 	@FindBy(xpath="//input[@aria-labelledby='q2q1']")
-	WebElement income;
+	public WebElement income;
 	
 	@FindBy(xpath="//input[@aria-labelledby='q2q2']")
-	WebElement otherIncome;
+	public WebElement otherIncome;
 	
 	@FindBy(xpath="//input[@id='expenses']")
-	WebElement livingExp;
+	public WebElement livingExp;
 	
 	@FindBy(xpath="//input[@id='homeloans']")
-	WebElement homeLoan;
+	public WebElement homeLoan;
 	
 	@FindBy(xpath="//input[@id='otherloans']")
-	WebElement otherLoan;
+	public WebElement otherLoan;
 	
 	@FindBy(xpath="//input[@aria-labelledby='q3q4']")
-	WebElement otherCommit;
+	public WebElement otherCommit;
 	
 	@FindBy(xpath="//input[@id='credit']")
-	WebElement creditLimit;
+	public WebElement creditLimit;
+	
+	@FindBy(xpath="//button[@class='btn btn--action btn--borrow__calculate']")
+	public WebElement workoutCal;
+	
+	@FindBy(xpath="//span[contains(text(),'$459,000')]")
+	public WebElement amountVisible;
+	
+	@FindBy(xpath="//span[@class='borrow__result__text__amount']")
+	public WebElement estimBorrow;
+	
+	@FindBy(xpath="//button[@class='start-over']")
+	public WebElement startOver;
+	
+	@FindBy(xpath="//span[@class='borrow__error__text']")
+	public WebElement errorMessage;
+	
+	
+	//Initializing the page objects
+	
+		public HomePage() {
+			PageFactory.initElements(driver, this);
+		}
+		
+	//Actions
+		
+		public String validateHomePageTitle() {
+			return driver.getTitle();
+		}
+		
+		public void fillYourDetails() {
+			Utility.clickOn(appType, "button", "appType");
+			Utility.select_option_In_DropDown_ByVal(dependentNum, "dropdown");
+			Utility.clickOn(propertyType, "button", "propertyType");
+		}
+		public void fillYourEarnings() {
+			Utility.enterData(income, "textBox", "YourIncome", prop.getProperty("YourIncome"));
+			Utility.enterData(otherIncome, "textBox", "OtherIncome", prop.getProperty("OtherIncome"));
+		}
+		
+		public void fillYourExpns() {
+			Utility.enterData(livingExp, "textBox", "LivingExpns", prop.getProperty("LivingExpns"));
+			Utility.enterData(homeLoan, "textBox", "CurrHomeLoan", prop.getProperty("CurrHomeLoan"));
+			Utility.enterData(otherLoan, "textBox", "otherLoan", prop.getProperty("otherLoan"));
+			Utility.enterData(otherCommit, "textBox", "OtherCommitments", prop.getProperty("otherCommit"));
+			Utility.enterData(creditLimit, "textBox", "creditLimit", prop.getProperty("creditLimit"));		
+		}
+		
+		public void clickOnCalculateButton() {
+			Utility.clickOn(workoutCal, "button", "workoutCal");
+			
+		}
+		
+		public int validateAmount() {
+			String amount = estimBorrow.getText();
+			String newAmount = Utility.convert(amount);
+			return Integer.parseInt(newAmount);
+			
+		}
+		
+		public boolean calculateButtonVisible() {
+			return workoutCal.isDisplayed();
+		}
+		
+		public void clickStartOver() {
+			Utility.clickOn(startOver, "button", "start over");
+		}	
+		
+		public String checkErrorMessage() {
+			String errMsg = errorMessage.getText();
+			return errMsg;
+		}
 
 }

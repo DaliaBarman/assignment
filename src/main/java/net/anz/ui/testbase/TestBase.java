@@ -21,7 +21,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("cogfig.properties");
+			FileInputStream ip = new FileInputStream("C:/Users/Dalia/SelJava/automationAssignment/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
