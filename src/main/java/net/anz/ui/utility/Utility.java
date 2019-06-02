@@ -1,7 +1,5 @@
 package net.anz.ui.utility;
 
-import java.util.List;
-
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -89,11 +87,7 @@ public class Utility extends TestBase{
 		
 	}
 
-	public static void enterData(WebElement obj, String objType, String objName, List<String> list) {
-		// TODO Auto-generated method stub
-		
-		
-	}
+
 
 
 }
