@@ -1,5 +1,7 @@
 package net.anz.ui.utility;
 
+import java.util.List;
+
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -70,6 +72,26 @@ public class Utility extends TestBase{
 			}
 		}
 		return sb.toString();	
+		
+	}
+	
+	public static String getText(WebElement strObj, String strObjType, String strObjName) {
+		String gData;
+		try {
+			gData=strObj.getText();
+			return gData;
+		}
+		catch(Exception e) {
+			System.out.println("some exception occured: " +e.getMessage());
+		}
+		return null;
+		
+		
+	}
+
+	public static void enterData(WebElement obj, String objType, String objName, List<String> list) {
+		// TODO Auto-generated method stub
+		
 		
 	}
 

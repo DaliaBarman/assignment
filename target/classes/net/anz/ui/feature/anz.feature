@@ -6,8 +6,9 @@ Given user opens browser
 When user is on home page
 Then user provides Your Detail
 Then user provides Your earnings
+| 80000 | 10000 |
 Then user provides Your Expences
-
+| 500 | 0 | 100 | 0 | 10000 |
 Scenario: Validate amount scenario
 
 Given Calculate button appears
@@ -29,6 +30,7 @@ Scenario: Validate error message scenario
 Given user clicking on calculate button
 When user clicking on start over button
 Then user provides only living expense as 1 
+| 1 |
 Then user click on calculate button
 Then user validates error message
 Then browser closed

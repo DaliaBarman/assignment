@@ -72,18 +72,7 @@ public class HomePage extends TestBase{
 			Utility.select_option_In_DropDown_ByVal(dependentNum, "dropdown");
 			Utility.clickOn(propertyType, "button", "propertyType");
 		}
-		public void fillYourEarnings() {
-			Utility.enterData(income, "textBox", "YourIncome", prop.getProperty("YourIncome"));
-			Utility.enterData(otherIncome, "textBox", "OtherIncome", prop.getProperty("OtherIncome"));
-		}
-		
-		public void fillYourExpns() {
-			Utility.enterData(livingExp, "textBox", "LivingExpns", prop.getProperty("LivingExpns"));
-			Utility.enterData(homeLoan, "textBox", "CurrHomeLoan", prop.getProperty("CurrHomeLoan"));
-			Utility.enterData(otherLoan, "textBox", "otherLoan", prop.getProperty("otherLoan"));
-			Utility.enterData(otherCommit, "textBox", "OtherCommitments", prop.getProperty("otherCommit"));
-			Utility.enterData(creditLimit, "textBox", "creditLimit", prop.getProperty("creditLimit"));		
-		}
+
 		
 		public void clickOnCalculateButton() {
 			Utility.clickOn(workoutCal, "button", "workoutCal");
@@ -106,8 +95,38 @@ public class HomePage extends TestBase{
 		}	
 		
 		public String checkErrorMessage() {
-			String errMsg = errorMessage.getText();
-			return errMsg;
+			return Utility.getText(errorMessage, "text", "message");
+		}
+		
+		public String checkIncomeFieldText() {
+			return Utility.getText(income, "textbox", "income");			
+			
+		}
+		
+		public String checkOtherIncomeText() {
+		return Utility.getText(otherIncome, "textbox", "othrIncome");
+				
+		}
+		
+		public String checkLivingFieldText() {
+		return Utility.getText(livingExp,"textbox", "livingExpense");
+		}
+		
+		public String checkHomeLoanFieldText() {
+		
+		return Utility.getText(homeLoan, "textbox", "homeLoan");
+		}
+		
+		public String checkOtherLoanFieldText() {
+		return Utility.getText(otherLoan, "textbox", "otherLoan");
+		}
+		
+		public String checkOtherCommitFieldText() {
+			return Utility.getText(otherCommit, "text", "otherCommit");
+		}
+		
+		public String checkCreditLimitFieldText() {
+			return Utility.getText(creditLimit, "text", "creditLimit");
 		}
 
 }

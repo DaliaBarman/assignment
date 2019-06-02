@@ -31,50 +31,71 @@ formatter.step({
 formatter.step({
   "line": 8,
   "name": "user provides Your earnings",
+  "rows": [
+    {
+      "cells": [
+        "80000",
+        "10000"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "user provides Your Expences",
+  "rows": [
+    {
+      "cells": [
+        "500",
+        "0",
+        "100",
+        "0",
+        "10000"
+      ],
+      "line": 11
+    }
+  ],
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 10499897903,
+  "duration": 10583025242,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 81876788,
+  "duration": 18427666,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.User_provides_Your_Detail()"
 });
 formatter.result({
-  "duration": 567061945,
+  "duration": 550389373,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_provides_Your_earnings()"
+  "location": "HomePageSteps.user_provides_Your_earnings(DataTable)"
 });
 formatter.result({
-  "duration": 706688800,
+  "duration": 583141924,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_selects_property_type()"
+  "location": "HomePageSteps.user_provides_Your_Expences(DataTable)"
 });
 formatter.result({
-  "duration": 1290178070,
+  "duration": 936593013,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 11,
+  "line": 12,
   "name": "Validate amount scenario",
   "description": "",
   "id": "anz-customer-application-test;validate-amount-scenario",
@@ -82,22 +103,22 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "Calculate button appears",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 15,
   "name": "user clicks on calculate button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 15,
+  "line": 16,
   "name": "user validates borrow amount",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 17,
   "name": "user closes browser",
   "keyword": "Then "
 });
@@ -105,28 +126,28 @@ formatter.match({
   "location": "HomePageSteps.Calculate_button_appears()"
 });
 formatter.result({
-  "duration": 40339048,
+  "duration": 40866278,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicks_on_calculate_button()"
 });
 formatter.result({
-  "duration": 1155165019,
+  "duration": 1161657620,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_validates_borrow_amount()"
 });
 formatter.result({
-  "duration": 64433357,
+  "duration": 45226190,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_closes_browser()"
 });
 formatter.result({
-  "duration": 1486545908,
+  "duration": 1133728468,
   "status": "passed"
 });
 formatter.background({
@@ -154,50 +175,71 @@ formatter.step({
 formatter.step({
   "line": 8,
   "name": "user provides Your earnings",
+  "rows": [
+    {
+      "cells": [
+        "80000",
+        "10000"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "user provides Your Expences",
+  "rows": [
+    {
+      "cells": [
+        "500",
+        "0",
+        "100",
+        "0",
+        "10000"
+      ],
+      "line": 11
+    }
+  ],
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 8380886503,
+  "duration": 8301766869,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 17661670,
+  "duration": 25760810,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.User_provides_Your_Detail()"
 });
 formatter.result({
-  "duration": 423093004,
+  "duration": 440608821,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_provides_Your_earnings()"
+  "location": "HomePageSteps.user_provides_Your_earnings(DataTable)"
 });
 formatter.result({
-  "duration": 806761510,
+  "duration": 792330206,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_selects_property_type()"
+  "location": "HomePageSteps.user_provides_Your_Expences(DataTable)"
 });
 formatter.result({
-  "duration": 1007665364,
+  "duration": 1152102654,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 20,
   "name": "Validate start over scenario",
   "description": "",
   "id": "anz-customer-application-test;validate-start-over-scenario",
@@ -205,22 +247,22 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 21,
+  "line": 22,
   "name": "user clicks on calculate button",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 22,
+  "line": 23,
   "name": "user clicks on start over button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 23,
+  "line": 24,
   "name": "user validates empty form",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 24,
+  "line": 25,
   "name": "browser closing",
   "keyword": "Then "
 });
@@ -228,28 +270,28 @@ formatter.match({
   "location": "HomePageSteps.user_clicks_on_calculate_button()"
 });
 formatter.result({
-  "duration": 1219441720,
+  "duration": 1235546008,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicks_on_start_over_button()"
 });
 formatter.result({
-  "duration": 126752933,
+  "duration": 232868801,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_validates_empty_form()"
 });
 formatter.result({
-  "duration": 509579815,
+  "duration": 367079664,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.browser_closing()"
 });
 formatter.result({
-  "duration": 1205597607,
+  "duration": 1037491681,
   "status": "passed"
 });
 formatter.background({
@@ -277,50 +319,71 @@ formatter.step({
 formatter.step({
   "line": 8,
   "name": "user provides Your earnings",
+  "rows": [
+    {
+      "cells": [
+        "80000",
+        "10000"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "user provides Your Expences",
+  "rows": [
+    {
+      "cells": [
+        "500",
+        "0",
+        "100",
+        "0",
+        "10000"
+      ],
+      "line": 11
+    }
+  ],
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 9374961646,
+  "duration": 7963474727,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 19089404,
+  "duration": 19272531,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.User_provides_Your_Detail()"
 });
 formatter.result({
-  "duration": 500520748,
+  "duration": 361536184,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_provides_Your_earnings()"
+  "location": "HomePageSteps.user_provides_Your_earnings(DataTable)"
 });
 formatter.result({
-  "duration": 834127240,
+  "duration": 831544568,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_selects_property_type()"
+  "location": "HomePageSteps.user_provides_Your_Expences(DataTable)"
 });
 formatter.result({
-  "duration": 1454721951,
+  "duration": 1154052758,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 27,
+  "line": 28,
   "name": "Validate error message scenario",
   "description": "",
   "id": "anz-customer-application-test;validate-error-message-scenario",
@@ -328,32 +391,40 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 29,
+  "line": 30,
   "name": "user clicking on calculate button",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 30,
+  "line": 31,
   "name": "user clicking on start over button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 31,
-  "name": "user provides only living expense as 1",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 32,
-  "name": "user click on calculate button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "user validates error message",
+  "name": "user provides only living expense as 1",
+  "rows": [
+    {
+      "cells": [
+        "1"
+      ],
+      "line": 33
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 34,
+  "name": "user click on calculate button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "user validates error message",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
   "name": "browser closed",
   "keyword": "Then "
 });
@@ -361,42 +432,42 @@ formatter.match({
   "location": "HomePageSteps.user_clicking_on_calculate_button()"
 });
 formatter.result({
-  "duration": 238408499,
+  "duration": 194068229,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicking_on_start_over_button()"
 });
 formatter.result({
-  "duration": 3256332704,
+  "duration": 3280989356,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_provides_only_living_expense_as_1()"
+  "location": "HomePageSteps.user_provides_only_living_expense_as_1(DataTable)"
 });
 formatter.result({
-  "duration": 87055096,
+  "duration": 99136553,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_click_on_calculate_button()"
 });
 formatter.result({
-  "duration": 186926854,
+  "duration": 211089227,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_validates_error_message()"
 });
 formatter.result({
-  "duration": 71351632,
+  "duration": 63880198,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.browser_closed()"
 });
 formatter.result({
-  "duration": 1124853607,
+  "duration": 1055508798,
   "status": "passed"
 });
 });

@@ -1,5 +1,8 @@
 package net.anz.ui.stepDefinitions;
 
+import java.util.List;
+
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -25,18 +28,26 @@ public class HomePageSteps extends TestBase {
 	}
 
 	@Then("^user provides Your Detail$")
-	public void User_provides_Your_Detail() throws Throwable {
+	public void User_provides_Your_Detail(){
 		homepage.fillYourDetails();
 	}
 
 	@Then("^user provides Your earnings$")
-	public void user_provides_Your_earnings() throws Throwable {
-		homepage.fillYourEarnings();
+	public void user_provides_Your_earnings(DataTable earningData) {
+		List<List<String>> enData= earningData.raw();
+		Utility.enterData(homepage.income, "textBox", "YourIncome", enData.get(0).get(0));
+		Utility.enterData(homepage.otherIncome, "textBox", "OtherIncome", enData.get(0).get(1));		
 	}
 
+
 	@Then("^user provides Your Expences$")
-	public void user_selects_property_type() throws Throwable {
-		homepage.fillYourExpns();
+	public void user_provides_Your_Expences(DataTable expenseData){
+		List<List<String>> exData= expenseData.raw();
+		Utility.enterData(homepage.livingExp, "textBox", "LivingExpns",exData.get(0).get(0));
+		Utility.enterData(homepage.homeLoan, "textBox", "CurrHomeLoan",exData.get(0).get(1));
+		Utility.enterData(homepage.otherLoan, "textBox", "otherLoan",exData.get(0).get(2));
+		Utility.enterData(homepage.otherCommit, "textBox", "OtherCommitments",exData.get(0).get(3));
+		Utility.enterData(homepage.creditLimit, "textBox", "creditLimit",exData.get(0).get(4));	
 	}
 	
 	//1st
@@ -75,13 +86,13 @@ public class HomePageSteps extends TestBase {
 	
 	@Then("^user validates empty form$")
 	public void user_validates_empty_form() {
-		Assert.assertNotNull(homepage.income.getText());
-		Assert.assertNotNull(homepage.otherIncome.getText());
-		Assert.assertNotNull(homepage.livingExp.getText());
-		Assert.assertNotNull(homepage.homeLoan.getText());
-		Assert.assertNotNull(homepage.otherLoan.getText());
-		Assert.assertNotNull(homepage.otherCommit.getText());
-		Assert.assertNotNull(homepage.creditLimit.getText());
+		Assert.assertNotNull(homepage.checkIncomeFieldText());
+		Assert.assertNotNull(homepage.checkOtherIncomeText());
+		Assert.assertNotNull(homepage.checkLivingFieldText());
+		Assert.assertNotNull(homepage.checkHomeLoanFieldText());
+		Assert.assertNotNull(homepage.checkOtherLoanFieldText());
+		Assert.assertNotNull(homepage.checkOtherCommitFieldText());
+		Assert.assertNotNull(homepage.checkCreditLimitFieldText());
 	}
 	
 	@Then("^browser closing$")
@@ -89,6 +100,8 @@ public class HomePageSteps extends TestBase {
 		driver.quit();
 	}
 	
+	
+	//3rd
 	
 	@Given("^user clicking on calculate button$")
 	public void user_clicking_on_calculate_button() {
@@ -103,8 +116,9 @@ public class HomePageSteps extends TestBase {
 
 	
 	@Then("^user provides only living expense as 1$")
-	public void user_provides_only_living_expense_as_1(){
-		Utility.enterData(homepage.livingExp, "textBox", "LivingObj", prop.getProperty("LivingExpn"));
+	public void user_provides_only_living_expense_as_1(DataTable livExp){
+		List<List<String>> livData= livExp.raw();
+		Utility.enterData(homepage.livingExp, "textBox", "LivingObj", livData.get(0).get(0));
 	}
 	
 	@Then("^user click on calculate button$")
