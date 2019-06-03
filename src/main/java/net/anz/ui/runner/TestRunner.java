@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="C:/Users/Dalia/SelJava/automationAssignment/src/main/java/net/anz/ui/feature/anz.feature",
+		features="C:/Users/Dalia/SelJava/automationAssignment/src/test/resources/net/anz/ui/feature/anz.feature",
 		glue= {"net/anz/ui/stepDefinitions"},
 		format= {"pretty","html:test-output"},
 		monochrome=true,

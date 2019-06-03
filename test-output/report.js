@@ -63,35 +63,35 @@ formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 10249591613,
+  "duration": 21679856243,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 92102135,
+  "duration": 48933547,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.User_provides_Your_Detail()"
 });
 formatter.result({
-  "duration": 512489304,
+  "duration": 420881447,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_provides_Your_earnings(DataTable)"
 });
 formatter.result({
-  "duration": 755789268,
+  "duration": 831238278,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_provides_Your_Expences(DataTable)"
 });
 formatter.result({
-  "duration": 872610178,
+  "duration": 1270916883,
   "status": "passed"
 });
 formatter.scenario({
@@ -126,28 +126,28 @@ formatter.match({
   "location": "HomePageSteps.Calculate_button_appears()"
 });
 formatter.result({
-  "duration": 45605407,
+  "duration": 39769142,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicks_on_calculate_button()"
 });
 formatter.result({
-  "duration": 1206280953,
+  "duration": 1247302807,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_validates_borrow_amount()"
 });
 formatter.result({
-  "duration": 43309039,
+  "duration": 99655140,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_closes_browser()"
 });
 formatter.result({
-  "duration": 992214712,
+  "duration": 1048451153,
   "status": "passed"
 });
 formatter.background({
@@ -207,35 +207,35 @@ formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 7859446171,
+  "duration": 10085400479,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 26023345,
+  "duration": 10340949,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.User_provides_Your_Detail()"
 });
 formatter.result({
-  "duration": 515625675,
+  "duration": 472893565,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_provides_Your_earnings(DataTable)"
 });
 formatter.result({
-  "duration": 804661233,
+  "duration": 875570986,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_provides_Your_Expences(DataTable)"
 });
 formatter.result({
-  "duration": 1239365725,
+  "duration": 1408333261,
   "status": "passed"
 });
 formatter.scenario({
@@ -270,28 +270,28 @@ formatter.match({
   "location": "HomePageSteps.user_clicks_on_calculate_button()"
 });
 formatter.result({
-  "duration": 1261993406,
+  "duration": 1227259959,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicks_on_start_over_button()"
 });
 formatter.result({
-  "duration": 213265672,
+  "duration": 175846918,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_validates_empty_form()"
 });
 formatter.result({
-  "duration": 580379908,
+  "duration": 397027524,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.browser_closing()"
 });
 formatter.result({
-  "duration": 1121322894,
+  "duration": 1039268922,
   "status": "passed"
 });
 formatter.background({
@@ -351,35 +351,35 @@ formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 8276640788,
+  "duration": 9629206497,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 28308909,
+  "duration": 16726052,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.User_provides_Your_Detail()"
 });
 formatter.result({
-  "duration": 472962709,
+  "duration": 398558976,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_provides_Your_earnings(DataTable)"
 });
 formatter.result({
-  "duration": 880676367,
+  "duration": 814494939,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_provides_Your_Expences(DataTable)"
 });
 formatter.result({
-  "duration": 925788036,
+  "duration": 1432497255,
   "status": "passed"
 });
 formatter.scenario({
@@ -432,42 +432,42 @@ formatter.match({
   "location": "HomePageSteps.user_clicking_on_calculate_button()"
 });
 formatter.result({
-  "duration": 154173221,
+  "duration": 247257971,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicking_on_start_over_button()"
 });
 formatter.result({
-  "duration": 3205496590,
+  "duration": 3405361649,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_provides_only_living_expense_as_1(DataTable)"
 });
 formatter.result({
-  "duration": 103032438,
+  "duration": 182616639,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_click_on_calculate_button()"
 });
 formatter.result({
-  "duration": 90349744,
+  "duration": 324636557,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_validates_error_message()"
 });
 formatter.result({
-  "duration": 215790003,
+  "duration": 94481154,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.browser_closed()"
 });
 formatter.result({
-  "duration": 1182636627,
+  "duration": 1036262738,
   "status": "passed"
 });
 });
