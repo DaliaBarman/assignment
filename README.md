@@ -11,28 +11,7 @@ Cucumber
 #My Framework
 https://github.com/DaliaBarman/assignment
 
-automationAssignment
-	|
-	|_src/main/java	
-	|       |_net.anz.ui.pages
-	|       |       |_HomePage.java
-	|       |	
-	|	      |_net.anz.ui.runner
-	|	      |	      |_TestRunner.java
-  |       |
-  |       |_net.anz.ui.testbase
-  |       |       |_TestBase.java
-  |       |
-  |       |_net.anz.ui.utility
-  |       |       |_Utility.java
-  |       |   
-	|_src/test/java
-	|	      |_net.anz.ui.stepDefinitions
-	|	     |	       |_HomePageSteps.java
-	|	     |	
-	|_src/test/resources
-	|	     |_net.anz.ui.feature
-	|	     |	      |_anz.feature
+
 
 
          Test-Output
