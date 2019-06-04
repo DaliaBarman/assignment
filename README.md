@@ -1,4 +1,4 @@
-# This is a sample project to automated tests covering various use cases to verify that borrowing calculator on 
+# This is a sample project to automate various use cases to verify that borrowing calculator on 
 https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow page is working properly and to make sure that the calculator continues to work as they make other changes to the page.
 
 #Pre-requisites
